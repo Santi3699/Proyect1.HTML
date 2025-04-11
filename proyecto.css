@@ -3,3 +3,145 @@
     background-size: cover;
     font-size: 18px;
 }
+
+.encabezado {
+    text-align: center;
+    padding: 60px;
+    background-color: #008b2e9c; color: rgb(255, 255, 255)
+}
+
+.menu{
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f8f8; color:black
+}
+
+.entrada1{
+    max-width: 700px;
+    margin: auto;
+}
+
+.entrada2{
+    list-style: none;
+    padding: 0%;
+}
+
+.fuerte1{
+    list-style: none;
+    padding: 0%;
+}
+
+.bebidas{
+    list-style: none;
+    padding: 0%;
+}
+
+.postres{
+    list-style: none;
+    padding: 0%;
+}
+
+.gallery1{
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery2{
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap
+}
+
+.video{
+    padding: 30px; 
+    background-color: #f8f8f8
+}
+
+.video1{
+    text-align: center;
+}
+
+.video2{
+    text-align: center;
+}
+
+.video3{
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap
+}
+
+.video11{
+    max-width: 300px
+}
+
+.video12{
+    text-align: center;
+}
+
+.video21{
+    max-width: 300px;
+}
+
+.video22{
+    text-align: center;
+}
+
+.video31{
+    max-width: 300px;
+}
+
+.video32{
+    text-align: center;
+}
+
+.formulario{
+    padding: 30px; 
+    background-color: #f0f0f0
+}
+
+.formulario1{
+    text-align: center;
+}
+
+.formulario2{
+    max-width: 500px; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px
+}
+
+.formulario3{
+    background-color: #8B0000; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer
+}
+
+.contacto{
+    padding: 30px; 
+    text-align: center
+}
+
+.redes{
+    text-align: center; 
+    padding: 20px
+}
+
+.horario{
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente si lo necesitas */
+    height: 70vh;           /* O cualquier alto que prefieras */
+}
