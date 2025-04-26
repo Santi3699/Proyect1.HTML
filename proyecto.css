@@ -1,4 +1,4 @@
-.clase{
+.clase {
     background-image: url(imagen7.jpg);
     background-size: cover;
     font-size: 18px;
@@ -7,141 +7,238 @@
 .encabezado {
     text-align: center;
     padding: 60px;
-    background-color: #008b2e9c; color: rgb(255, 255, 255)
+    background-color: #008b2e9c;
+    color: rgb(255, 255, 255);
 }
 
-.menu{
+.menu {
     text-align: center;
     padding: 30px;
-    background-color: #f8f8f8; color:black
+    background-color: #f8f8f8;
+    color: black;
 }
 
-.entrada1{
+.entrada1 {
     max-width: 700px;
     margin: auto;
 }
 
-.entrada2{
+.entrada2, .fuerte1, .bebidas, .postres {
     list-style: none;
     padding: 0%;
 }
 
-.fuerte1{
-    list-style: none;
-    padding: 0%;
-}
-
-.bebidas{
-    list-style: none;
-    padding: 0%;
-}
-
-.postres{
-    list-style: none;
-    padding: 0%;
-}
-
-.gallery1{
+.gallery1 {
     padding: 30px;
     text-align: center;
 }
 
-.gallery2{
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap
+.gallery2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.video{
-    padding: 30px; 
-    background-color: #f8f8f8
+.video {
+    padding: 30px;
+    background-color: #f8f8f8;
 }
 
-.video1{
+.video1, .video2, .video12, .video22, .video32 {
     text-align: center;
 }
 
-.video2{
-    text-align: center;
+.video3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.video3{
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap
-}
-
-.video11{
-    max-width: 300px
-}
-
-.video12{
-    text-align: center;
-}
-
-.video21{
+.video11, .video21, .video31 {
     max-width: 300px;
 }
 
-.video22{
+.formulario {
+    padding: 30px;
+    background-color: #f0f0f0;
+}
+
+.formulario1 {
     text-align: center;
 }
 
-.video31{
-    max-width: 300px;
+.formulario2 {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.video32{
+.formulario3 {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contacto {
+    padding: 30px;
     text-align: center;
 }
 
-.formulario{
-    padding: 30px; 
-    background-color: #f0f0f0
-}
-
-.formulario1{
+.redes {
     text-align: center;
+    margin: 40px 0;
+    padding: 20px;
 }
 
-.formulario2{
-    max-width: 500px; 
-    margin: auto; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 15px
+.redes h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
-.formulario3{
-    background-color: #8B0000; 
-    color: white; 
-    padding: 10px; 
-    border: none; 
-    cursor: pointer
+.redes-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
-.contacto{
-    padding: 30px; 
-    text-align: center
+.redes-links a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0077cc;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    margin: 10px;
 }
 
-.redes{
-    text-align: center; 
-    padding: 20px
+.redes-links a:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+    margin: 10px;
 }
 
-.horario{
-    background-color: #333; 
-    color: white; 
-    text-align: center; 
-    padding: 20px
+.horario {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .map-container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente si lo necesitas */
-    height: 70vh;           /* O cualquier alto que prefieras */
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* CORRECCIÓN DEL BOTÓN Y MENÚ DESPLEGABLE */
+.menu-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+/* Estilos del contenedor del menú desplegable */
+#menu-desplegable {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #ffffff;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Cuando el menú tiene la clase .show */
+#menu-desplegable.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Estilos para los enlaces dentro del menú */
+#menu-desplegable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-desplegable ul li {
+    text-align: center;
+    padding: 12px 0;
+}
+
+#menu-desplegable ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover en los enlaces */
+#menu-desplegable ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
