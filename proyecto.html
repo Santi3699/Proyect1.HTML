@@ -79,23 +79,26 @@
     </div>
   </section>
 
-  <!-- Galería de fotos -->
   <section id="galeria" class="gallery1">
     <h2>Galería</h2>
-    <div class="gallery2">
-      <img src="imagen.jpg" alt="Platillo 1" style="width: 300px; border-radius: 10px;">
-      <img src="imagen2.jpg" alt="Platillo 2" style="width: 300px; border-radius: 10px;">
-      <img src="imagen4.jpg" alt="Platillo 3" style="width: 300px; border-radius: 10px;">
-      <img src="imagen8.jpg" alt="Platillo 4" style="width: 300px; border-radius: 10px;">
-      <img src="imagen9.jpg" alt="Platillo 5" style="width: 300px; border-radius: 10px;">
-      <img src="imagen10.jpg" alt="Platillo 6" style="width: 300px; border-radius: 10px;">
-      <img src="imagen11.jpg" alt="Platillo 7" style="width: 300px; border-radius: 10px;">
-      <img src="imagen12.jpg" alt="Platillo 8" style="width: 300px; border-radius: 10px;">
-      <img src="imagen13.jpg" alt="Platillo 9" style="width: 300px; border-radius: 10px;">
-      <img src="imagen14.jpg" alt="Platillo 10" style="width: 300px; border-radius: 10px;">
+    <div class="carrusel-wrapper">
+      <button id="anterior">⟨</button>
+      <div class="gallery2" id="carrusel">
+        <img src="imagen.jpg" alt="Platillo 1">
+        <img src="imagen2.jpg" alt="Platillo 2">
+        <img src="imagen4.jpg" alt="Platillo 3">
+        <img src="imagen8.jpg" alt="Platillo 4">
+        <img src="imagen9.jpg" alt="Platillo 5">
+        <img src="imagen10.jpg" alt="Platillo 6">
+        <img src="imagen11.jpg" alt="Platillo 7">
+        <img src="imagen12.jpg" alt="Platillo 8">
+        <img src="imagen13.jpg" alt="Platillo 9">
+        <img src="imagen14.jpg" alt="Platillo 10">
+      </div>
+      <button id="siguiente">⟩</button>
     </div>
   </section>
-
+  
   <!-- Sección de Videos Cortos -->
   <section class="video">
     <h2 class="video1">Nuestros Videos</h2>
@@ -134,13 +137,13 @@
   <!-- Formulario de reservación -->
   <section id="reservaciones" class="formulario">
     <h2 class="formulario1">Reservaciones</h2>
-    <form class="formulario2">
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="tel" placeholder="Teléfono" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <input type="date" placeholder="Fecha" required>
-      <input type="time" placeholder="Hora" required>
-      <input type="number" placeholder="Número de personas" min="1" required>
+    <form  id="reserva" class="formulario2">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="tel" id="telefono" placeholder="Teléfono" required>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="date" id="fecha" placeholder="Fecha" required>
+      <input type="time" id="hora" placeholder="Hora" required>
+      <input type="number" id="personas" placeholder="Número de personas" min="1" required>
       <textarea placeholder="Comentarios (opcional)" rows="4"></textarea>
       <button type="submit" class="formulario3">Reservar</button>
     </form>
